@@ -237,7 +237,6 @@ article[data-vim-selected].category-social {
     font-size: 1rem;
     color: var(--color-result-url-font);
     flex-wrap: nowrap;
-    overflow: hidden;
     flex-direction: row;
     margin: 0;
     padding: 0;
@@ -254,12 +253,14 @@ article[data-vim-selected].category-social {
     }
 
     .url_o2 {
-      overflow: hidden;
       white-space: nowrap;
       flex-basis: content;
       flex-grow: 0;
       flex-shrink: 1;
       text-align: right;
+      overflow-x: hidden;
+      overflow-y: visible;
+      padding-bottom: 1px;
 
       .url_i2 {
         float: right;
